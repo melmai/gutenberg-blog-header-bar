@@ -65,7 +65,7 @@ registerBlockType( 'blog-header-bar/blog-header-bar', {
 						value={ mediaID }
 						render={ ( { open } ) => (
 							<Button className={ mediaID ? 'image-button' : 'button button-large' } onClick={ open }>
-								{ ! mediaID ? __( 'Upload Image', 'blog-header-bar' ) : <img src={ mediaURL } alt={ __( 'Upload Recipe Image', 'blog-header-bar' ) } /> }
+								{ ! mediaID ? __( 'Upload Image', 'blog-header-bar' ) : <img src={ mediaURL } alt={ __( 'Upload Icon Image', 'blog-header-bar' ) } /> }
 							</Button>
 						) }
 					/>
@@ -79,8 +79,6 @@ registerBlockType( 'blog-header-bar/blog-header-bar', {
 			attributes: {
 				title,
 				mediaURL,
-				ingredients,
-				instructions,
 			},
 		} = props;
 		return (
@@ -89,10 +87,10 @@ registerBlockType( 'blog-header-bar/blog-header-bar', {
 
 				{
 					mediaURL && (
-						<img className="recipe-image" src={ mediaURL } alt={ __( 'Recipe Image', 'blog-header-bar' ) } />
+						<img src={ mediaURL } />
 					)
 				}
-				
+
 			</div>
 		);
 	},

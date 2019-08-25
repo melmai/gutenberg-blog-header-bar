@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Custom Gutenberg Block - Blog Header Bar
- * Plugin URI: https://github.com/melmai/
+ * Plugin URI: https://github.com/melmai/gutenberg-blog-header-bar
  * Description: This is a plugin to add a styled title bar to blog posts
  * Version: 0.1
  * Author: Melissa Wong

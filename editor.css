@@ -1,0 +1,36 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+
+.wp-block-blog-header-bar-blog-header-bar {
+    position: relative;
+    padding: 20px 75px 20px 0;
+    min-height: 140px;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    max-width: none !important;
+}
+
+.editor-styles-wrapper h2 {
+    background: #f0f0f0;
+    padding: 40px 75px 10px 30px;
+    margin: 0;
+    min-height: 100px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300 !important;
+    font-size: 28px !important;
+    line-height: 44px !important;
+}
+
+.editor-styles-wrapper h2::before {
+    display: none !important;
+}
+
+.title-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+}
